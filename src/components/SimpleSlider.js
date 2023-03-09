@@ -20,22 +20,12 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{ ...style, display: ".slick-next", background: "red" }}
       onClick={onClick}
     />
   );
 }
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
+// display: "block"
 
 
 const SimpleSlider = () => {
@@ -48,8 +38,7 @@ const SimpleSlider = () => {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        nextArrow: <SampleNextArrow className=".slick-next"/>,
         autoplay: true,
         responsive: [
             {
@@ -128,6 +117,7 @@ const SimpleSlider = () => {
             <h3>11</h3>
             <img src={interior4} className='slider-image'></img>
           </div>
+        
         </Slider>
     </div>
   )

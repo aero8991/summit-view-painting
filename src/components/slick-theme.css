@@ -202,4 +202,9 @@
 {
     opacity: .75;
     color: black;
+
 }
+
+.slick-dots li.slick-active button:before{
+    color: orange
+  }

@@ -8,10 +8,10 @@ export default function Home() {
     <div className="hero-container">
       <img src={background} className="main-img" />
       <div className="hero-text">
-        <h3 className="hero-title"> Rossano Painting</h3>
+        <h3 className="hero-title"> Summit View Painting</h3>
         <h1 className="hero-title-bold">North Seattle Painting Company</h1>
         <p className="hero-subtitle">
-          Rossano Painting is a highly rated painting company serving Northern
+        Summit View  Painting is a highly rated painting company serving Northern
           Western Washington. We are known for our exceptional quality work and
           competitive pricing
         </p>

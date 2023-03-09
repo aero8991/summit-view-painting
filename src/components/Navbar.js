@@ -3,6 +3,9 @@ import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import DropDown from "./Dropdown";
+import logo1 from "../images/logo1.jpg";
+import logo2 from "../images/logo2.jpg";
+import logo3 from "../images/logo3.jpg";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -20,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        Painting
+      <img src={logo3} className="nav-img-logo" />
       </Link>
       <div className="menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"} />

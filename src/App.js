@@ -20,7 +20,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Router basename="/#">
+      <Router basename="/">
         <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} exact/>
