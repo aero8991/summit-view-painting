@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import "./Navbar.css";
-import DropDown from "./Dropdown";
-import logo1 from "../images/logo1.jpg";
-import logo2 from "../images/logo2.jpg";
+import DropDown from "./Dropdown"; 
 import logo3 from "../images/logo3.jpg";
 
+
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const [dropDown, setDropDown] = useState(false);
 
   const handleClick = () => {
@@ -28,32 +27,32 @@ const Navbar = () => {
       <div className="menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
+      <ul className="nav-menu">
         <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <NavLink to="/" className={({isActive}) => isActive ? 'active-nav' : ''} onClick={closeMobileMenu}>
             Home
-          </Link>
+          </NavLink>
         </li>
         <li
           className="nav-item"
           onMouseEnter={()=> setDropDown(true)}
           onMouseLeave={()=> setDropDown(false)}
         >
-          <Link to="/services" className="nav-links-item" onClick={handleDropDown}>
+          <NavLink to="/services" className={({isActive}) => isActive ? 'active-nav' : ''} onClick={handleDropDown}>
             Services <i className="fas fa-caret-down" />
-          </Link>
+          </NavLink>
           {dropDown && <DropDown />}
           {/* <DropDown /> */}
         </li>
         <li className="nav-item">
-          <Link to="/gallery" className="nav-links" onClick={closeMobileMenu}>
+          <NavLink to="/gallery" className={({isActive}) => isActive ? 'active-nav' : ''} onClick={closeMobileMenu}>
             Gallery
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+          <NavLink to="/about" className={({isActive}) => isActive ? 'active-nav' : ''} onClick={closeMobileMenu}>
             About
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <Button />

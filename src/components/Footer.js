@@ -17,7 +17,7 @@ const Footer = () => {
           <FooterItem className={"footer-link-items"} data={footerData.Social_Media}/>
         </div>
         <div className="footer-link-wrapper">
-
+  
           <FooterItem className={"footer-link-items"} data={footerData.About_Us}/>
 
 

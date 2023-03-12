@@ -2,6 +2,11 @@ import React from "react";
 import "../HeroSection.css";
 import background from "../../images/main_image.png";
 import { Link } from "react-router-dom";
+import Testimonials from "../Testimonials";
+import SimpleSlider from "../SimpleSlider";
+import Values from "../Values";
+import ServicesMain from "../ServicesMain";
+
 
 export default function Home() {
   return (
@@ -26,41 +31,11 @@ export default function Home() {
           </Link>
         </button>
       </div>
-      <div className="container">
-        <div className="box">
-          <h2>01</h2>
-          <h3>Service One</h3>
-          <p>
-            Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum
-            dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
-            amet.
-          </p>
-        </div>
-      </div>
-      <div className="container">
-        <div className="box">
-          <h2>02</h2>
-          <h3>Service Two</h3>
-          <p>
-            Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum
-            dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
-            amet.
-          </p>
-        </div>
-      </div>
-      <div className="container">
-        <div className="box">
-          <h2>03</h2>
-          <h3>Service Three</h3>
-          <p>
-            Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum
-            dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit
-            amet.
-          </p>
-        </div>
-      </div>
-      <div>Services Offered</div>
-      <div>Why choose Rossano Painting?</div>
+      <ServicesMain />
+      <Values />
+      <Testimonials />
+      <SimpleSlider />
     </div>
+    
   );
 }
