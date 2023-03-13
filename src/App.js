@@ -13,6 +13,7 @@ import DecksFences from "./components/pages/DecksFences";
 import Home from "./components/pages/Home";
 import Footer from "./components/Footer";
 import Footer2 from "./components/Footer2";
+import NotFound from "./components/pages/NotFound";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
@@ -29,6 +30,7 @@ function App() {
           <Route path="/exterior" element={<Exterior />} />
           <Route path="/door-trim-painting" element={<DoorTrim />} />
           <Route path="/decks-fences" element={<DecksFences />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         {/* <Footer /> */}
         <Footer2 />

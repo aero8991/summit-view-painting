@@ -16,7 +16,7 @@ export default function Home() {
         <h3 className="hero-title"> Summit View Painting</h3>
         <h1 className="hero-title-bold">North Seattle Painting Company</h1>
         <p className="hero-subtitle">
-        Summit View  Painting is a highly rated painting company serving Northern
+        <b>Summit View Painting</b> is a highly rated painting company serving Northern
           Western Washington. We are known for our exceptional quality work and
           competitive pricing
         </p>
@@ -35,6 +35,10 @@ export default function Home() {
       <Values />
       <Testimonials />
       <SimpleSlider />
+      <div className="bottom-btn">
+      <button className='home-btn'> 
+      <Link to="/gallery" classname="link-gallery"> View Project Gallery </Link></button>
+      </div>
     </div>
     
   );
