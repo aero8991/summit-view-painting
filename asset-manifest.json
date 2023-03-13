@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/summit-view-painting/static/css/main.08e6f13f.css",
-    "main.js": "/summit-view-painting/static/js/main.8b83a327.js",
+    "main.css": "/summit-view-painting/static/css/main.2b01e930.css",
+    "main.js": "/summit-view-painting/static/js/main.0e8e67eb.js",
     "static/media/interior_edmonds.jpg": "/summit-view-painting/static/media/interior_edmonds.a2ed745890568230bd4b.jpg",
     "static/media/Interior_seattle.jpg": "/summit-view-painting/static/media/Interior_seattle.54c9909928132af55109.jpg",
     "static/media/interior_kenmore.jpg": "/summit-view-painting/static/media/interior_kenmore.47241fbd4e7cce401b6d.jpg",
@@ -14,14 +14,15 @@
     "static/media/fence1.jpg": "/summit-view-painting/static/media/fence1.2b283ece45eb1aace98c.jpg",
     "static/media/house1.jpg": "/summit-view-painting/static/media/house1.6519bb69b6c953d5e5b7.jpg",
     "static/media/fence3.jpg": "/summit-view-painting/static/media/fence3.1188ec2fff8840987f57.jpg",
+    "static/media/working_dan.jpg": "/summit-view-painting/static/media/working_dan.9b86da4e097ff0e6d180.jpg",
     "static/media/dan_working.jpg": "/summit-view-painting/static/media/dan_working.c204eea57cc0b78aeaf1.jpg",
     "static/media/logo3.jpg": "/summit-view-painting/static/media/logo3.0b7d522144e47866236f.jpg",
     "index.html": "/summit-view-painting/index.html",
-    "main.08e6f13f.css.map": "/summit-view-painting/static/css/main.08e6f13f.css.map",
-    "main.8b83a327.js.map": "/summit-view-painting/static/js/main.8b83a327.js.map"
+    "main.2b01e930.css.map": "/summit-view-painting/static/css/main.2b01e930.css.map",
+    "main.0e8e67eb.js.map": "/summit-view-painting/static/js/main.0e8e67eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.08e6f13f.css",
-    "static/js/main.8b83a327.js"
+    "static/css/main.2b01e930.css",
+    "static/js/main.0e8e67eb.js"
   ]
 }
